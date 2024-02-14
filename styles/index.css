@@ -24,12 +24,37 @@ body{
     justify-content: center;
 
 }
+@keyframes move {
+    from{
+        transform: translateX(50%);
+    }
+    to{
+        transform: translateX(-310%);
+    }
+}
+/* @keyframes grow {
+    0%{
+        transform: scale(3);
+        border-radius: 100%;
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+} */
 .letter{
     width: 50%;
     padding: 5% 7%;
     border: 2px solid burlywood;
     background: linear-gradient(#e3a03b, #B1a086);
+    /* animation: grow 1s infinite linear paused; */
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: .5s;
 }
+
 .logo{
     width: 5em;
     border-radius: 26%;
@@ -51,3 +76,21 @@ body{
 .invitation{
     
 }
+/* @media rotate {
+    .letter::before{
+        animation: animate__rotateIn;
+        animation-duration: 5s;
+    }
+    .letter::after{
+        animation: animate__rotateOut;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+}*/
+
+.logo-container:hover{
+    animation: animate__flash;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
