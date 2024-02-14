@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url("../images/dragon_alley.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.letter{
+    width: 50%;
+    padding: 5% 7%;
+    border: 2px solid burlywood;
+    background: linear-gradient(#e3a03b, #B1a086);
+}
+.logo{
+    width: 5em;
+    border-radius: 26%;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    margin-bottom: 5%;
+}
+.headmaster, .school-name, .invitation{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+.headmaster{
+    font-weight: 500;
+}
+.invitation{
+    
+}
