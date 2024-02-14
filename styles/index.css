@@ -22,8 +22,15 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
+.open-btn{
+    background-color: #f19408;
+    padding: 2% 4%;
+    border-radius: 5%;
+    letter-spacing: 2px;
+    margin: 5% 0;
+}
+
 @keyframes move {
     from{
         transform: translateX(50%);
@@ -61,7 +68,9 @@ body{
 }
 .logo-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     opacity: 0.5;
     margin-bottom: 5%;
 }
@@ -92,5 +101,6 @@ body{
     animation: animate__flash;
     animation-duration: 4s;
     animation-delay: 2s;
+    
 }
 
