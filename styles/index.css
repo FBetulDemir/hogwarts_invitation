@@ -9,14 +9,13 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 200vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     font-family: "Dancing Script", cursive;
     font-style: normal;
     font-optical-sizing: auto;
 }
-
 .wrapper{
     width: 100%;
     display: flex;
@@ -29,7 +28,6 @@ body{
     border-radius: 9%;
     letter-spacing: 2px;
     margin: 5% 0;
-    /* box-shadow: 12px; */
     font-family: inherit;
     font-size: 16px;
 }
@@ -38,7 +36,6 @@ body{
     background-color: #f0d687;
     cursor: pointer;
 }
-
 @keyframes move {
     from{
         transform: translateX(50%);
@@ -47,16 +44,15 @@ body{
         transform: translateX(-310%);
     }
 }
-
 .letter{
     width: 50%;
     padding: 5% 7%;
     border: 2px solid burlywood;
     background: linear-gradient(#e3a03b, #B1a086);
-    /* animation: grow 1s infinite linear paused; */
-    animation-name: move;
+    animation: move 2s 2s;
+    /* animation-name: move;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s; */
     border-bottom-left-radius: 15% 15%;
     border-bottom-right-radius: 15% 15%;
     border-top-right-radius: 15% 15%;
@@ -68,7 +64,6 @@ body{
     border-top-right-radius: 5% 50%;
     border-top-left-radius: 3% 50%;
 }
-
 .logo{
     width: 5em;
     border-radius: 26%;
@@ -90,29 +85,7 @@ body{
 .headmaster{
     font-weight: 500;
 }
-
-/* @media rotate {
-    .letter::before{
-        animation: animate__rotateIn;
-        animation-duration: 5s;
-    }
-    .letter::after{
-        animation: animate__rotateOut;
-        animation-duration: 5s;
-        animation-delay: 1s;
-    }
-}*/
-
-
-/* @keyframes grow {
-    0%{
-        transform: scale(3);
-        border-radius: 100%;
-    }
-    50%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform: scale(0.5);
-    }
-} */
+.greeting{
+    text-align: start;
+    margin-top: 10%;
+}
