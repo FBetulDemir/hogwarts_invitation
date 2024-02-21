@@ -37,11 +37,17 @@ body{
     cursor: pointer;
 }
 @keyframes move {
-    from{
-        transform: translateX(50%);
+    0%{
+        transform: translateX(0%);
     }
-    to{
-        transform: translateX(-310%);
+    40%{
+        transform: translateX(-150%);
+    }
+    70%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
     }
 }
 .letter{
@@ -49,7 +55,7 @@ body{
     padding: 5% 7%;
     border: 2px solid burlywood;
     background: linear-gradient(#e3a03b, #B1a086);
-    animation: move 2s 2s;
+    animation: move 3s linear 2s;
     /* animation-name: move;
     animation-duration: 2s;
     animation-delay: 2s; */
